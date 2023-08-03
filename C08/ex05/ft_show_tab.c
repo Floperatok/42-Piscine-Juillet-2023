@@ -6,12 +6,12 @@
 /*   By: nsalles <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 12:04:45 by nsalles           #+#    #+#             */
-/*   Updated: 2023/08/03 14:03:40 by nsalles          ###   ########.fr       */
+/*   Updated: 2023/08/03 16:26:30 by nsalles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_stock_str.h"
 #include <unistd.h>
+#include "ft_stock_str.h"
 
 void	ft_putchar(char c)
 {
@@ -63,13 +63,4 @@ void	ft_show_tab(struct s_stock_str *par)
 		write(1, "\n", 1);
 		i++;
 	}
-}
-
-int	main(int ac, char **av)
-{
-	struct s_stock_str *tab;
-
-	tab = ft_strs_to_tab(ac, av);
-	ft_show_tab(tab);
-	return (0);
 }
